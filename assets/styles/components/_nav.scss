@@ -49,10 +49,11 @@ nav{
                  color:$color-primery;
                  transition: 0.5s;
                  cursor: pointer;
-                 
+
               }
           }
           .nav__parent-list{
+            z-index: 2;
             position: absolute;
             list-style-type: none;
             top: 70px;
@@ -73,7 +74,7 @@ nav{
                     background-color: $color-primery;
                 }
             }
-          
+
         }
         & :hover .nav__parent-list{
             opacity: 1;
@@ -81,6 +82,7 @@ nav{
             transition: 0.5s;
         }
         .nav__parent-list-one{
+            z-index: 2;
             position: absolute;
             list-style-type: none;
             top: 70px;
@@ -137,6 +139,6 @@ nav{
             transition: 0.5s;
          }
         }
-        
+
     }
 }
