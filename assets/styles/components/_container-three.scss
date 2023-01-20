@@ -1,0 +1,230 @@
+.container-three{
+    background-color:$color-last;
+    width: 100%;
+    @include d-flex(center,center, column);
+    .main-wraper{
+        width: 100%;
+        @include d-flex(center,center,column);
+ 
+    }
+       .wraper-container{
+        gap: 20px;
+            width: 100%;
+             @include d-flex(center,center,column);
+         
+        .box{
+            padding: 0 20px;
+            text-align: center;
+            width: 270px;
+            background-color:$color-primery;
+            @include d-flex(center,center,column);
+            padding-bottom: 20px;
+            border-radius: 45px 0 45px 0;
+            transform: translateY(-40px);
+            top: -50px;
+            z-index: 1;
+            cursor: pointer;
+            transition: 1s;
+            color: white; 
+           
+            &:hover{
+                background-color: white;
+                color: black;
+                box-shadow: 0px 0px 5px 0px black;
+            }
+            &:hover .cr{
+                background-color: $color-primery;
+                color: white;
+            }
+        .cr{
+            margin-top: 20px;
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: $font-size-medium;
+            color: $color-primery;
+        }
+        h4{
+            margin-top: 20px;
+        }
+        p{
+            font-size: 15px;
+            margin-top: 20px;
+        }
+        }
+        .box-one{
+            padding: 0 20px;
+            text-align: center;
+            width: 270px;
+            background-color:#A197BD;
+            @include d-flex(center,center,column);
+            padding-bottom: 20px;
+            border-radius: 45px 0 45px 0;
+            transform: translateY(-40px);
+            top: -50px;
+            z-index: 1;
+            cursor: pointer;
+            transition: 1s;
+            color: white;
+            &:hover{
+                background-color: white;
+                color: black;
+                box-shadow: 0px 0px 5px 0px black;
+            }
+            &:hover .cr{
+                background-color:#A197BD ;
+                color: white;
+            }
+            .cr{
+                margin-top: 20px;
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: $font-size-medium;
+                color:#A197BD;
+            }
+            h4{
+                margin-top: 20px;
+            }
+            p{
+                font-size: 15px;
+                margin-top: 20px;
+            }
+        }
+        .box-two{
+            padding: 0 20px;
+            text-align: center;
+            width: 270px;
+            background-color:#BDA697;
+            @include d-flex(center,center,column);
+            padding-bottom: 20px;
+            border-radius: 45px 0 45px 0;
+            transform: translateY(-40px);
+            top: -50px;
+            z-index: 1;
+            cursor: pointer;
+            transition: 1s;
+            color: white;
+            &:hover{
+                background-color: white;
+                color: black;
+                box-shadow: 0px 0px 5px 0px black;
+            }
+            &:hover .cr{
+                background-color:#BDA697 ;
+                color: white;
+            }
+            .cr{
+                margin-top: 20px;
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: $font-size-medium;
+                color:#BDA697;
+            }
+            h4{
+                margin-top: 20px;
+            }
+            p{
+                font-size: 15px;
+                margin-top: 20px;
+            }
+        }    
+        .box-three{
+            padding: 0 20px;
+            text-align: center;
+            width: 270px;
+            background-color:#97BDAB;
+            @include d-flex(center,center,column);
+            padding-bottom: 20px;
+            border-radius: 45px 0 45px 0;
+            transform: translateY(-40px);
+            top: -50px;
+            z-index: 1;
+            cursor: pointer;
+            transition: 1s;
+            color: white;
+            &:hover{
+                background-color: white;
+                color: black;
+                box-shadow: 0px 0px 5px 0px black;
+            }
+            &:hover .cr{
+                background-color: #97BDAB;
+                color: white;
+            }
+            .cr{
+                margin-top: 20px;
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: $font-size-medium;
+                color:#97BDAB;
+            }
+            h4{
+                margin-top: 20px;
+            }
+            p{
+                font-size: 15px;
+                margin-top: 20px;
+            }
+        }  
+        @include tablet{
+          @include d-flex(center,center,row);
+          gap: 5px;
+          .box{
+            width: 170px;
+            height: 300px;
+          }
+          .box-one{
+            width: 170px;
+            height: 300px;
+          }
+          .box-two{
+            width: 170px;
+            height: 300px;
+          }
+          .box-three{
+            width: 170px;
+            height:300px;
+          }
+        }
+        @include desktop{
+            gap: 20px;
+            .box{
+                width: 250px;
+                height: 300px;
+              }
+              .box-one{
+                width: 250px;
+                height: 300px;
+              }
+              .box-two{
+                width: 250px;
+                height: 300px;
+              }
+              .box-three{
+                width: 250px;
+                height:300px;
+              }
+
+        }
+    }
+    
+}
