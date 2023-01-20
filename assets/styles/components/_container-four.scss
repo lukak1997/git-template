@@ -1,0 +1,70 @@
+.container-four{
+    padding: 70px 0;
+    width: 100%;
+    @include d-flex(center,center,column);
+    gap: 20px;
+    .img-wraper:hover .box-container{
+       background-color: $color-primery;
+       cursor: pointer;
+       transition: 0.5s;
+       color: white;
+       cursor: pointer;
+    }
+    .img-wraper:hover .cr{
+        background-color: white;
+        color: $color-primery;
+        transition: 0.5s;
+    }
+    img{
+        width: 250px;
+        box-shadow: 0px 0px 2px 0px black;
+    }
+    .box-container{
+        height: 40px;
+        width: 250px;
+        box-shadow: 0px 0px 2px 0px black;
+       transform: translateY(-5px);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+
+       .cr{
+        width: 35px;
+        height: 35px;
+        background-color: $color-primery;
+        border-radius: 50px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+       }
+    }
+    @include tablet(){
+        @include d-flex(center, center,row);
+        gap: 40px;
+        img{
+            width: 280px;
+        }
+        .box-container{
+            width: 280px;
+            @include d-flex(space-between,center,row);
+            padding: 0 20px;
+            
+        }
+    }
+    @include desktop(){
+        @include d-flex(space-evenly, center,row);
+        img{
+            width: 450px;
+        }
+
+        .box-container{
+            width: 450px;
+            @include d-flex(space-between,center,row);
+            padding: 0 20px;
+            
+        }
+    }
+}
