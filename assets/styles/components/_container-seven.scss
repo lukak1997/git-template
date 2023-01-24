@@ -1,0 +1,42 @@
+.container-seven{
+    padding: 60px 0;
+    width: 100%;
+    background-color: $color-primery;
+    text-align: center;
+    @include d-flex(center,center,column);
+    color: white;
+    h3{
+        padding:0 40px;
+    }
+    .wraper-box{
+        margin-top: 40px;
+        @include d-flex(center,center,column);
+        .img-wraper{
+            @include d-flex(center,center,column);
+            img{
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+             }
+             @include pad{
+                @include d-flex(center,center,row);
+                text-align: start;
+                gap: 20px;
+             }
+        }
+        .white-box{
+            margin-top: 30px;
+            width: 90%;
+            color: black;
+            background-color: white;
+            padding: 30px;
+            border-radius: 45px 0 45px 0px;
+        }
+
+    }
+    @include tablet{
+        .main-wraper{
+            @include d-flex(center,center,row);
+        }
+    }
+}
