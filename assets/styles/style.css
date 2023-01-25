@@ -1099,4 +1099,123 @@ nav .nav__list {
     align-items: center;
     flex-direction: row;
   }
+}
+
+.container-eight {
+  padding: 60px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.container-eight h3 {
+  padding: 0 40px;
+}
+.container-eight .main-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container-eight .img-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.container-eight .img-wraper img {
+  width: 270px;
+  height: 240px;
+}
+.container-eight .img-wraper .item-hover {
+  width: 270px;
+  height: 240px;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 60px;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-eight .img-wraper .item-hover:hover {
+  background-color: rgba(0, 0, 0, 0.505);
+  color: white;
+}
+.container-eight .img-wraper .item-line {
+  background-color: #282E39;
+  width: 270px;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-eight .img-wraper .item-line i {
+  padding: 0 5px;
+}
+.container-eight .img-wraper .text-container {
+  padding-left: 30px;
+  border-left: 1px solid rgba(0, 0, 0, 0.454);
+  margin-top: 30px;
+  width: 270px;
+  text-align: start;
+}
+.container-eight .img-wraper .text-container .tx-paragraph {
+  margin-top: 20px;
+  color: #97A9BD;
+  font-size: 17px;
+}
+@media screen and (min-width: 744px) {
+  .container-eight .main-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .container-eight .main-wraper img {
+    width: 190px;
+    height: 150px;
+  }
+  .container-eight .main-wraper .item-hover {
+    width: 190px;
+    height: 150px;
+  }
+  .container-eight .main-wraper .item-line {
+    width: 190px;
+    font-size: 11px;
+  }
+  .container-eight .main-wraper .text-container {
+    width: 190px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-eight .main-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .container-eight .main-wraper img {
+    width: 370px;
+    height: 340px;
+  }
+  .container-eight .main-wraper .item-hover {
+    width: 370px;
+    height: 340px;
+  }
+  .container-eight .main-wraper .item-line {
+    width: 370px;
+    font-size: 18px;
+  }
+  .container-eight .main-wraper .text-container {
+    width: 370px;
+  }
 }/*# sourceMappingURL=style.css.map */

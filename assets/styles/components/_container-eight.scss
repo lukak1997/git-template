@@ -1,0 +1,104 @@
+.container-eight{
+    padding: 60px 0;
+    width: 100%;
+    @include d-flex(center,center,column);
+    gap: 20px;
+    text-align: center;
+    h3{
+        padding: 0 40px;
+    }
+    .main-wraper{
+        @include d-flex(center,center,column);
+        gap: 20px;
+    }
+    .img-wraper{
+        @include d-flex(center,center,column);
+        position: relative;
+       img{
+        width: 270px;
+        height: 240px;
+       } 
+       .item-hover{
+        width: 270px;
+        height: 240px;
+        position: absolute;
+        top: 0;
+        transition: 0.5s;
+        cursor: pointer;
+        font-size: $font-size-xl;
+        color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.505);
+            color: white;
+        }
+       }
+      .item-line{
+         background-color:#282E39;
+         width: 270px;
+         height: 30px;
+         color: white;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+        i{
+            padding: 0 5px;
+        }
+      }
+      .text-container{
+
+      padding-left: 30px;
+        border-left: 1px solid rgba(0, 0, 0, 0.454);
+        margin-top: 30px;
+        width: 270px;
+       text-align: start;
+       .tx-paragraph{
+        margin-top: 20px;
+        color: $color-primery;
+        font-size: 17px;
+       }
+      }
+    }
+    @include tablet{
+        .main-wraper{
+            @include d-flex(center,flex-start,row);
+            img{
+                width: 190px;
+                height: 150px;
+            }
+            .item-hover{
+                width: 190px;
+                height: 150px;
+            }
+            .item-line{
+                width: 190px;
+                font-size: 11px;
+            }
+            .text-container{
+                width: 190px;
+            }
+        }
+    }
+    @include desktop{
+        .main-wraper{
+            @include d-flex(center,flex-start,row);
+            img{
+                width:370px;
+                height: 340px;
+            }
+            .item-hover{
+                width: 370px;
+                height: 340px;
+            }
+            .item-line{
+                width: 370px;
+                font-size: 18px;
+            }
+            .text-container{
+                width: 370px;
+            }
+        }
+    }
+}
