@@ -1218,4 +1218,191 @@ nav .nav__list {
   .container-eight .main-wraper .text-container {
     width: 370px;
   }
+}
+
+.container-nein {
+  padding: 60px 0;
+  width: 100%;
+  background-color: rgba(165, 166, 170, 0.1607843137);
+  text-align: center;
+}
+.container-nein h3 {
+  padding: 0 40px;
+}
+.container-nein .main-wraper {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container-nein .item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container-nein .item-box .phone-box {
+  width: 90%;
+  background-color: white;
+  display: flex;
+  text-align: start;
+  gap: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container-nein .item-box .phone-box:hover {
+  background-color: #A197BD;
+}
+.container-nein .item-box .phone-box:hover:hover .cr {
+  background-color: white;
+  color: #A197BD;
+}
+.container-nein .item-box .phone-box:hover:hover .about {
+  color: white;
+}
+.container-nein .item-box .phone-box .cr {
+  background-color: #A197BD;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.container-nein .item-box .phone-box .about {
+  width: 70%;
+}
+.container-nein .item-box .mail-box {
+  width: 90%;
+  background-color: white;
+  display: flex;
+  text-align: start;
+  gap: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container-nein .item-box .mail-box:hover {
+  background-color: #BDA697;
+}
+.container-nein .item-box .mail-box:hover:hover .cr {
+  background-color: white;
+  color: #BDA697;
+}
+.container-nein .item-box .mail-box:hover:hover .about {
+  color: white;
+}
+.container-nein .item-box .mail-box .cr {
+  background-color: #BDA697;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.container-nein .item-box .mail-box .about {
+  width: 70%;
+}
+.container-nein .item-box .location-box {
+  width: 90%;
+  background-color: white;
+  display: flex;
+  text-align: start;
+  gap: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container-nein .item-box .location-box:hover {
+  background-color: #97BDAB;
+}
+.container-nein .item-box .location-box:hover:hover .cr {
+  background-color: white;
+  color: #97BDAB;
+}
+.container-nein .item-box .location-box:hover:hover .about {
+  color: white;
+}
+.container-nein .item-box .location-box .cr {
+  background-color: #97BDAB;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.container-nein .item-box .location-box .about {
+  width: 70%;
+}
+.container-nein .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-nein .main-container .text-container {
+  width: 90%;
+  text-align: start;
+}
+.container-nein .main-container .text-container h2 {
+  font-size: 17px;
+}
+.container-nein .main-container .text-container p {
+  margin-top: 20px;
+}
+.container-nein .main-container .itput-box {
+  text-align: start;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+.container-nein .main-container .itput-box input {
+  height: 45px;
+  padding: 0 10px;
+  outline: none;
+  transition: 0.5s;
+  border: transparent;
+}
+.container-nein .main-container .itput-box input:focus {
+  border: 1px solid #97A9BD;
+}
+@media screen and (min-width: 744px) {
+  .container-nein .main-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .container-nein .main-wraper .item-box {
+    width: 50%;
+  }
+  .container-nein .main-wraper .main-container {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-nein .main-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .container-nein .main-wraper .item-box {
+    width: 50%;
+  }
+  .container-nein .main-wraper .main-container {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,190 @@
+.container-nein{
+    padding: 60px 0;
+    width: 100%;
+    background-color: #a5a6aa29;
+    text-align: center;
+    h3{
+        padding: 0 40px;
+    }
+    .main-wraper{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .item-box{
+        @include d-flex(center,center,column);
+        gap: 20px;
+        .phone-box{
+            width: 90%;
+            background-color: white;
+            display: flex;
+            text-align: start;
+            gap: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover{
+                background-color: #A197BD;
+                &:hover .cr{
+                    background-color: white;
+                    color: #A197BD;
+                }
+                &:hover .about{
+                    color: white;
+                }
+            }
+             
+            .cr{
+                background-color:#A197BD ;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+            .about{
+                width: 70%;
+            }
+        
+        }
+
+        .mail-box{
+            width: 90%;
+            background-color: white;
+           display: flex;
+            text-align: start;
+            gap: 15px;
+            padding: 10px  20px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover{
+                background-color:#BDA697 ;
+                &:hover .cr{
+                    background-color: white;
+                    color:#BDA697;
+                }
+                &:hover .about{
+                    color: white;
+                }
+            }
+             
+            .cr{
+                background-color:#BDA697 ;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+            .about{
+             width: 70%;
+            }
+         
+        }
+
+
+        
+        .location-box{
+            width: 90%;
+            background-color: white;
+            display: flex;
+            text-align: start;
+            gap: 15px;
+            padding: 10px  20px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover{
+                background-color:#97BDAB ;
+                &:hover .cr{
+                    background-color: white;
+                    color:#97BDAB;
+                }
+                &:hover .about{
+                    color: white;
+                }
+            }
+             
+            .cr{
+                background-color:#97BDAB ;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+            .about{
+                width: 70%;
+            
+            }
+         
+        }
+    }
+  .main-container{
+    @include d-flex(center,center,column);
+     .text-container{
+        width:90% ;
+        text-align: start;
+       h2{
+        font-size: 17px;
+       }
+       p{
+        margin-top: 20px;
+       }
+     }
+     .itput-box{
+        text-align: start;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+        input{
+            height: 45px;
+            padding: 0 10px;
+            outline: none;
+            transition: 0.5s;
+            border: transparent;
+            &:focus{
+                border: 1px solid $color-primery;
+            }
+          
+        }
+     }
+  }
+  @include tablet{
+    .main-wraper{
+      @include d-flex(center,flex-start,row);
+      gap: 10px;
+      .item-box{
+        width: 50%;
+      }
+     .main-container{
+        width: 50%;
+     }
+  }
+    }
+    @include desktop{
+        .main-wraper{
+          @include d-flex(center,flex-start,row);
+          gap: 10px;
+          .item-box{
+            width: 50%;
+          }
+         .main-container{
+        width: 50%;
+         }
+
+      }
+        }
+}
