@@ -1405,4 +1405,95 @@ nav .nav__list {
   .container-nein .main-wraper .main-container {
     width: 50%;
   }
+}
+
+.container-ten {
+  padding: 60px 0;
+  width: 100%;
+  text-align: center;
+}
+.container-ten h3 {
+  padding: 0 40px;
+}
+.container-ten .main-wraper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container-ten .main-wraper .img-wraper {
+  position: relative;
+}
+.container-ten .main-wraper .img-wraper img {
+  width: 270px;
+  height: 270px;
+}
+.container-ten .main-wraper .img-wraper .item-hover {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  top: 0;
+  color: transparent;
+  font-size: 60px;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container-ten .main-wraper .img-wraper .item-hover:hover {
+  background-color: rgba(0, 0, 0, 0.39);
+  color: white;
+}
+.container-ten .main-wraper .img-wraper .about-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 1px 0px black;
+  width: 270px;
+  padding: 10px 0;
+  transform: translateY(-6px);
+  z-index: -1;
+}
+@media screen and (min-width: 744px) {
+  .container-ten .main-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .container-ten .main-wraper .img-wraper img {
+    width: 170px;
+    height: 170px;
+  }
+  .container-ten .main-wraper .img-wraper .item-hover {
+    width: 170px;
+    height: 170px;
+  }
+  .container-ten .main-wraper .img-wraper .about-line {
+    width: 170px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-ten .main-wraper {
+    gap: 40px;
+  }
+  .container-ten .main-wraper .img-wraper img {
+    width: 300px;
+    height: 300px;
+  }
+  .container-ten .main-wraper .img-wraper .item-hover {
+    width: 300px;
+    height: 300px;
+  }
+  .container-ten .main-wraper .img-wraper .about-line {
+    width: 300px;
+    height: 120px;
+  }
 }/*# sourceMappingURL=style.css.map */
